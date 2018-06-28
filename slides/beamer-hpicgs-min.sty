@@ -1,0 +1,169 @@
+\useinnertheme{rectangles}
+
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[default,light]{sourcesanspro}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+\usepackage{graphicx}
+%\usepackage{textcomp}
+%\usepackage{amsmath}
+%\usepackage[labelformat=empty,textfont=small,justification=centering,compatibility=false, skip=5pt]{caption}
+%\usepackage[labelformat=empty,textfont=small,justification=centering]{subcaption}
+%\usepackage[labelformat=empty,textfont=scriptsize,justification=centering]{subcaption}
+%\usepackage{textpos}
+\usepackage{tikz}
+%\usepackage{environ}
+%\usepackage{charter}
+%\usetikzlibrary{spy,calc,matrix}
+%\usepackage{media9}
+%\usepackage{array}
+%\usepackage{multirow}
+\usepackage{csquotes}
+%\usepackage{gitinfo}
+%\usepackage{inconsolata}
+\usepackage{listings}
+\usepackage{datetime2}
+%\usepackage{calc}
+%\usepackage{etoolbox}
+%\usepackage{animate}
+%\usepackage{array}
+%\usepackage{calc}
+%\usepackage{varwidth}
+% Justify text
+%\usepackage{ragged2e}
+
+%\deftranslation[to=German]{Table of Contents}{Inhaltsverzeichnis}
+%\deftranslation[to=German]{Hasso Plattner Institute}{Hasso-Plattner-Institut}
+
+%\hypersetup{bookmarksopen=false}
+%\definecolor{darkblue}{rgb}{0,0,.5}
+%\hypersetup{pdftex=true, colorlinks=true, breaklinks=true, linkcolor=darkblue, menucolor=darkblue, pagecolor=darkblue, urlcolor=darkblue}
+
+%\renewcommand<>{\emph}[1]{\textbf{#1}}
+%\newcommand{\deemph}[1]{\textcolor{gray}{#1}}
+
+\setbeamercovered{transparent}
+
+\mode<presentation>
+\beamer@suppressreplacementstrue
+
+%\input{../../common/glsl-lstset}
+
+
+
+
+
+
+\definecolor{CorporateBlue0}{cmyk}{0.9464,0.5968,0.2961,0.1462}
+\definecolor{CorporateBlue1}{cmyk}{0.8584,0.4622,0.2444,0.0826}
+\definecolor{CorporateBlue2}{cmyk}{0.7658,0.3269,0.1963,0.0425}
+\definecolor{CorporateBlue3}{cmyk}{0.5218,0.0869,0.1018,0.0000}
+\definecolor{CorporateBlue4}{cmyk}{0.3044,0.0000,0.0554,0.0000}
+
+\setbeamercolor{postit}{fg=black,bg=white}
+
+\setbeamercolor{title}{fg=CorporateBlue0}
+\setbeamercolor{subtitle}{fg=CorporateBlue2}
+\setbeamercolor{author}{fg=CorporateBlue2}
+\setbeamercolor{institute}{fg=gray}
+\setbeamercolor{frametitle}{fg=CorporateBlue1}
+\setbeamercolor{footline}{fg=CorporateBlue2}
+
+\setbeamercolor{normal text}{fg=black}
+
+%\setbeamercolor{structure}{fg=cgi@red}
+%\setbeamercolor{section in toc}{fg=black}
+%\setbeamercolor{subsection in toc}{fg=black}
+%\setbeamercolor{subsubsection in toc}{fg=black}
+%\setbeamercolor{background canvas}{bg=}
+
+\setbeamerfont{title}{size=\Large}
+\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{frametitle}{size=\Large}
+%\setbeamerfont{framesubtitle}{size=\scriptsize}
+\setbeamerfont{footline}{size=\tiny}
+%
+\pgfdeclareimage[height=5mm]{cgi@logo}{logos/hpi_logo_cmyk_b}
+
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+
+\renewcommand\thempfootnote{\arabic{mpfootnote}}
+\newcommand{\blueify}[1]{\textcolor{CorporateBlue2}{#1}}
+\newcommand{\grayify}[1]{\textcolor{gray}{#1}}
+
+% TITLE PAGE (1st Page)
+\defbeamertemplate*{title page}{cgi}[1][]
+{
+	\center
+	%
+	\usebeamerfont{title}\usebeamercolor[fg]{title}
+	\inserttitle\par
+	%
+	\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}
+	\ifx\insertsubtitle\empty
+	% do nothing
+	\else
+		\medskip\insertsubtitle\par
+	\fi
+	%
+	\bigskip
+	%
+	\inserttitlegraphic\par
+	%
+	\usebeamerfont{author}\usebeamercolor[fg]{author}
+	\ifx\insertauthor\empty
+	% do nothing
+	\else
+		\bigskip\insertauthor\par
+	\fi
+	%
+	\usebeamerfont{institute}\usebeamercolor[fg]{institute}
+	\ifx\insertinstitute\empty
+		% do nothing
+	\else
+		\smallskip\insertinstitute\par
+	\fi
+}
+
+
+% FRAME TITLE (Header)
+\defbeamertemplate*{frametitle}{cgi}
+{
+	\begin{beamercolorbox}[left, leftskip=8mm, ht=8mm, dp=1mm, wd=\paperwidth]{frametitle}
+		\usebeamerfont{frametitle}\insertframetitle{}
+	\end{beamercolorbox}
+	\nointerlineskip
+	\vspace{-16mm}
+	\begin{beamercolorbox}[right, rightskip=8mm, ht=16mm, dp=1mm, wd=\paperwidth]{}
+		\pgfuseimage{cgi@logo}
+	\end{beamercolorbox}
+	\vspace{-2mm}
+}
+
+
+% FOOT LINE (Footer)
+\defbeamertemplate*{footline}{cgi}
+{
+	\begin{beamercolorbox}[left, leftskip=8mm, rightskip=8mm, dp=4mm, wd=\paperwidth]{footline}
+		\insertpagenumber \quad \insertshorttitle 
+		\hfill \insertauthor %\insertsubtitle~\ifx\insertsectionhead\empty\else\slash~\insertsectionhead\fi
+		\hfill VINCI 2018 Växjö, Sweden \quad 2018-08-14%\DTMtoday
+	\end{beamercolorbox}%
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{item projected}{bg=black}
+\setbeamertemplate{enumerate items}[box]
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+
+%Define pro and con bullet points for item lists
+%\newcommand\pro{\item[\textbf{\textcolor{cgi@blue}{$+$}}]}
+%\newcommand\con{\item[\textbf{\textcolor{cgi@red}{$-$}}]}
+
