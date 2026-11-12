@@ -32,6 +32,7 @@ DOI: [10.1145/3231622.3231638](https://doi.org/10.1145/3231622.3231638) · Autho
 ```
 
 The paper was built with TeX Live 2017 and its `acmart.cls` (v1.50, 2018/02/07); the build reproduces `limberger2018-filtering-as-submitted.pdf` pixel-identically.
+On `main`, the build produces the revised version (`v1.1-revised`). Check out `v1.0-camera-ready` to reproduce `limberger2018-filtering-as-submitted.pdf`.
 The `acmart.dtx` (v1.53) shipped with the camera-ready sources was not used for the original PDF (its copyright block reads "licensed to ACM" instead of "licensed to the Association for Computing Machinery") and is therefore not included.
 The slides were built with TeX Live 2018; the build matches `limberger2018-filtering-slides.pdf` in text and layout (raster images render marginally differently).
 
@@ -42,6 +43,16 @@ The slides contain third-party images; the iceberg (`slides/images/iceberg.jpg`,
 ## Versions
 
 - [`v1.0-camera-ready`](https://github.com/dl-archive/article.2018-vinci-reference/tree/v1.0-camera-ready) – sources as submitted to ACM, and the talk
+- [`v1.1-revised`](https://github.com/dl-archive/article.2018-vinci-reference/tree/v1.1-revised) – author's revised version of the paper (2026-11-12): spelling and grammar fixes, see [Revisions](#revisions)
+
+## Revisions
+
+`v1.1-revised` (2026-11-12) corrects errors in the camera-ready version without changing its content or layout (same page and column breaks).
+Every page carries the note "Author's revised version (2026-11-12). Version of record: https://doi.org/10.1145/3231622.3231638"; author ORCIDs were added to the metadata (`\orcid`).
+
+- Spelling: "accuracy", "auxiliary", "subset", "subfigure", "tooltips", "straightforward", "software map" (was "softwaremap"), "unselected nodes" (was "notes").
+- Grammar and word choice: "a height threshold", "consist", "Although", "Interaction techniques", "large numbers of", "targets", "more difficult than", "list" (was "enlist"), "to reduce occlusion", "First of all", "affects" (was "effects"), "as a visual variable", "cuboid's location", "might be decreased", "in order to fake", "Please note that", "Also note that", "physically based lighting", "as a number", "obtain" (was "retain"), "we suggest introducing", "the face's normal", "changes while being locked to the interaction's initial node", "set up", "more accurately with", "Each participant was introduced to", "the interactions that are available", "time to respond", "increased", "tasks completed", "This paper shows", "partial obscuration", and missing commas.
+- Hyphenation and spacing: height-based, task-aware, non-linear, order-independent, GPU-generated, pseudo-interactive, height-related, height-reference manipulation; two stray spaces before citations removed.
 
 ## Citation
 
