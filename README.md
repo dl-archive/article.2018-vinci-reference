@@ -37,7 +37,7 @@ The slides were built with TeX Live 2018; the build matches `limberger2018-filte
 
 ## Credits
 
-The slides contain third-party images; the iceberg (`slides/images/iceberg.jpg`, slide "Software Maps — Goals") is from [Geo a Day](https://geoaday.tumblr.com/) by Jeremiah Shaw and Danny Jones (2013).
+The slides contain third-party images; the iceberg (`slides/images/iceberg.jpg`, slide "Software Maps — Goals") is from [Geo a Day](https://geoaday.tumblr.com/post/32336708639) by Jeremiah Shaw and Danny Jones (2012).
 
 ## Versions
 
