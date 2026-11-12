@@ -35,6 +35,10 @@ The paper was built with TeX Live 2017 and its `acmart.cls` (v1.50, 2018/02/07);
 The `acmart.dtx` (v1.53) shipped with the camera-ready sources was not used for the original PDF (its copyright block reads "licensed to ACM" instead of "licensed to the Association for Computing Machinery") and is therefore not included.
 The slides were built with TeX Live 2018; the build matches `limberger2018-filtering-slides.pdf` in text and layout (raster images render marginally differently).
 
+## Credits
+
+The slides contain third-party images; the iceberg (`slides/images/iceberg.jpg`, slide "Software Maps — Goals") is from [Geo a Day](https://geoaday.tumblr.com/) by Jeremiah Shaw and Danny Jones (2013).
+
 ## Versions
 
 - [`v1.0-camera-ready`](https://github.com/dl-archive/article.2018-vinci-reference/tree/v1.0-camera-ready) – sources as submitted to ACM, and the talk
