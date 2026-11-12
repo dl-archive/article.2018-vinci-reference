@@ -4,7 +4,7 @@
 
 *Proceedings of the 11th International Symposium on Visual Information Communication and Interaction (VINCI '18)*, August 13–15, 2018, Växjö, Sweden. ACM, pp. 49–55.
 
-DOI: [10.1145/3231622.3231638](https://doi.org/10.1145/3231622.3231638) · Author's version: [Zenodo](https://doi.org/10.5281/zenodo.24176593) · [ResearchGate](https://www.researchgate.net/publication/326728307)
+[![Version of record: 10.1145/3231622.3231638](https://img.shields.io/badge/Version_of_record-10.1145%2F3231622.3231638-007ec6)](https://doi.org/10.1145/3231622.3231638) [![Author's version: 10.5281/zenodo.24176593](https://img.shields.io/badge/Author%27s_version-10.5281%2Fzenodo.24176593-007ec6)](https://doi.org/10.5281/zenodo.24176593) · [ResearchGate](https://www.researchgate.net/publication/326728307)
 
 > The 2.5D treemap facilitates interactive exploration of multivariate data.
 > It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes.
